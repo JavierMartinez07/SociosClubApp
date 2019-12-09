@@ -5,6 +5,15 @@
     <UserSecretsId>aspnet-SociosClubApp-78E6E1B0-5C2F-494C-B51A-79115DCFF108</UserSecretsId>
   </PropertyGroup>
 
+  <ItemGroup>
+    <Compile Remove="Data\Migrations\20191208203617_Socios.cs" />
+    <Compile Remove="Data\Migrations\20191208203617_Socios.Designer.cs" />
+    <Compile Remove="Data\Migrations\20191208210121_Socios.cs" />
+    <Compile Remove="Data\Migrations\20191208210121_Socios.Designer.cs" />
+    <Compile Remove="Data\Migrations\20191208233753_Socio001.cs" />
+    <Compile Remove="Data\Migrations\20191208233753_Socio001.Designer.cs" />
+  </ItemGroup>
+
 
   <ItemGroup>
     <PackageReference Include="Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore" Version="3.0.0" />
@@ -12,6 +21,8 @@
     <PackageReference Include="Microsoft.AspNetCore.Identity.UI" Version="3.0.0" />
     <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="3.0.0" />
     <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="3.0.0" />
+    <PackageReference Include="Microsoft.Extensions.Logging.Debug" Version="3.0.0" />
+    <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="3.0.0" />
   </ItemGroup>
 
 

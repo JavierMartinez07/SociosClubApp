@@ -25,9 +25,10 @@ namespace SociosClubApp.Models
         public string Celular { get; set; }
         public string Fax { get; set; }
         [Required]
-        public string Sexo { get; set; }
+        public TipoSexo Sexo { get; set; }
         [Required]
         public int Edad { get; set; }
+        [DataType(DataType.Date)]
         public DateTime FechaNac { get; set; }
         [Required]
         [Display(Name ="Tipo Membresia")]
@@ -41,8 +42,10 @@ namespace SociosClubApp.Models
         [Required]
         public bool Estado { get; set; }
         [Required]
+        [DataType(DataType.Date)]
         [Display(Name ="Fecha Ingreso")]
         public DateTime FechaIngreso { get; set; }
+        [DataType(DataType.Date)]
         [Display(Name ="Fecha Salida")]
         public DateTime FechaSalida { get; set; }
     }
@@ -50,5 +53,10 @@ namespace SociosClubApp.Models
     public enum TipoM
     {
         Gratis, Normal, Premiun
+    }
+
+    public enum TipoSexo
+    {
+        Hombre, Mujer
     }
 }

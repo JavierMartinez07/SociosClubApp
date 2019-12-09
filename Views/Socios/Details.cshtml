@@ -1,0 +1,181 @@
+﻿@model SociosClubApp.Models.Socio
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+    <h1>Detalles Informacion</h1>
+
+<div>
+    <h4>Datos de Socio</h4>
+    <hr />
+    <div class="row">
+        <div class="col-sm-4">
+            <div>
+                <b>
+                    @Html.DisplayNameFor(model => model.Nombre)
+                </b>  <br />
+                @Html.DisplayFor(model => model.Nombre)
+
+            </div>
+
+            <div>
+                <b>
+                    @Html.DisplayNameFor(model => model.Apellido)
+
+                </b>  <br />
+                @Html.DisplayFor(model => model.Apellido)
+
+            </div>
+
+            <div>
+                <b>
+            @Html.DisplayNameFor(model => model.Cedula)
+
+                </b>  <br />
+
+            @Html.DisplayFor(model => model.Cedula)
+            </div>
+
+
+   
+        <div><b>
+            @Html.DisplayNameFor(model => model.Imagen)
+        </b><br/>
+            
+            @Html.DisplayFor(model => model.Imagen)
+            </div>
+        
+        
+        <div><b>
+            @Html.DisplayNameFor(model => model.Direccion)
+        </b><br/>
+            @Html.DisplayFor(model => model.Direccion)
+            
+            </div>
+        
+        
+        <div><b>
+            @Html.DisplayNameFor(model => model.Telefono)
+        </b><br/>
+            @Html.DisplayFor(model => model.Telefono)
+            
+            </div>
+</div>
+
+        <div class="col-sm-4">
+            <div>
+                <b>
+                    @Html.DisplayNameFor(model => model.Celular)
+                </b><br />
+                @Html.DisplayFor(model => model.Celular)
+
+            </div>
+
+
+            <div>
+                <b>
+                    @Html.DisplayNameFor(model => model.Fax)
+                </b><br />
+                @Html.DisplayFor(model => model.Fax)
+
+            </div>
+
+
+            <div>
+                <b>
+                    @Html.DisplayNameFor(model => model.Sexo)
+                </b><br />
+                @Html.DisplayFor(model => model.Sexo)
+
+            </div>
+
+
+            <div>
+                <b>
+                    @Html.DisplayNameFor(model => model.Edad)
+                </b><br />
+                @Html.DisplayFor(model => model.Edad)
+
+            </div>
+
+
+            <div>
+                <b>
+                    @Html.DisplayNameFor(model => model.FechaNac)
+                </b><br />
+                @Html.DisplayFor(model => model.FechaNac)
+
+            </div>
+
+
+            <div>
+                <b>
+                    @Html.DisplayNameFor(model => model.TipoMembresia)
+                </b><br />
+                @Html.DisplayFor(model => model.TipoMembresia)
+
+            </div>
+        </div>
+
+        <div class="col-sm-4">
+            <div>
+                <b>
+                    @Html.DisplayNameFor(model => model.LugarTrabajo)
+                </b><br />
+                @Html.DisplayFor(model => model.LugarTrabajo)
+
+            </div>
+
+
+            <div>
+                <b>
+                    @Html.DisplayNameFor(model => model.DireccionOficina)
+                </b><br />
+                @Html.DisplayFor(model => model.DireccionOficina)
+
+            </div>
+
+
+            <div>
+                <b>
+                    @Html.DisplayNameFor(model => model.TelefonoOficina)
+                </b><br />
+                @Html.DisplayFor(model => model.TelefonoOficina)
+
+            </div>
+
+
+            <div>
+                <b>
+                    @Html.DisplayNameFor(model => model.Estado)
+                </b><br />
+                @Html.DisplayFor(model => model.Estado)
+
+            </div>
+
+
+            <div>
+                <b>
+                    @Html.DisplayNameFor(model => model.FechaIngreso)
+                </b><br />
+                @Html.DisplayFor(model => model.FechaIngreso)
+
+            </div>
+
+
+            <div>
+                <b>
+                    @Html.DisplayNameFor(model => model.FechaSalida)
+                </b><br />
+                @Html.DisplayFor(model => model.FechaSalida)
+
+            </div>
+        </div>
+
+    </div>
+</div>
+<div>
+    <a asp-action="Edit" asp-route-id="@Model.SocioId">Edit</a> |
+    <a asp-action="Index">Back to List</a>
+</div>
