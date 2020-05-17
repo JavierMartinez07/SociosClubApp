@@ -30,7 +30,7 @@ jobs:
       uses: rtCamp/action-slack-notify@v2.0.2
       env:
         SLACK_CHANNEL: prueba-git
-        SLACK_COLOR: '#3278BD'
+        SLACK_COLOR: '#3275BD'
         SLACK_MESSAGE: 'Post Content :rocket:'
         SLACK_TITLE: Prueba Slack Github Actions
         SLACK_WEBHOOK: ${{ secrets.SLACK_WEBHOOK }}
