@@ -31,7 +31,9 @@ jobs:
       env:
         SLACK_CHANNEL: prueba-git
         SLACK_COLOR: '#3275BD'
-        SLACK_MESSAGE: 'Post Content :rocket:'
+        SLACK_USERNAME: MTO Bot
+        SLACK_ICON: https://github.com/rtCamp.png?size=48
         SLACK_TITLE: Prueba Slack Github Actions
+        SLACK_MESSAGE: 'rueba Slack Github Actions haciendo commit a master'
         SLACK_WEBHOOK: ${{ secrets.SLACK_WEBHOOK }}
 
