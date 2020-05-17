@@ -8,9 +8,7 @@ on:
 
 jobs:
   build:
-
-    runs-on: self-hosted
-
+    runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v2
     - name: Setup .NET Core
@@ -23,3 +21,17 @@ jobs:
       run: dotnet build --configuration Release --no-restore
     - name: Test
       run: dotnet test --no-restore --verbosity normal
+  notifySlack:
+   name: Slack Notification
+   runs-on: ubuntu-latest
+   steps:
+    - uses: actions/checkout@v2
+    - name: Slack Notification
+      uses: rtCamp/action-slack-notify@v2.0.2
+      env:
+        SLACK_CHANNEL: prueba-git
+        SLACK_COLOR: '#3278BD'
+        SLACK_MESSAGE: 'Post Content :rocket:'
+        SLACK_TITLE: Prueba Slack Github Actions
+        SLACK_WEBHOOK: ${{ secrets.SLACK_WEBHOOK }}
+
